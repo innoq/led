@@ -18,6 +18,15 @@
       <header>
         <h1>Linked Environment Data</h1>
         <p>Getting Things Connected</p>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            {% for post in site.posts %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
       </header>
       <section>
         {{ content }}
