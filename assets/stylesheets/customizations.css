@@ -23,3 +23,7 @@ img {
   -ms-interpolation-mode: bicubic;
 }
 
+a img {
+  border: none;
+}
+
